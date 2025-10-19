@@ -8,7 +8,7 @@ const Header = memo(() => (
   <div className="text-center lg:mb-8 mb-2 px-[5%]">
     <div className="inline-block relative group">
       <h2 
-        className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]" 
+        className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#e11d48] to-[#f87171]" 
         data-aos="zoom-in-up"
         data-aos-duration="600"
       >
@@ -20,9 +20,9 @@ const Header = memo(() => (
       data-aos="zoom-in-up"
       data-aos-duration="800"
     >
-      <Sparkles className="w-5 h-5 text-purple-400" />
+      <Sparkles className="w-5 h-5 text-red-400" />
       Transforming ideas into digital experiences
-      <Sparkles className="w-5 h-5 text-purple-400" />
+      <Sparkles className="w-5 h-5 text-red-400" />
     </p>
   </div>
 ));
@@ -50,7 +50,7 @@ const ProfileImage = memo(() => (
           <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
           
           <img
-            src="/Photo.jpg"
+            src="/axlepfp.jpg"
             alt="Profile"
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
             loading="lazy"
@@ -158,7 +158,7 @@ const AboutPage = () => {
   const statsData = useMemo(() => [
     {
       icon: Code,
-      color: "from-[#6366f1] to-[#a855f7]",
+      color: "from-[#e11d48] to-[#f87171]",
       value: totalProjects,
       label: "Total Projects",
       description: "Innovative web solutions crafted",
@@ -166,7 +166,7 @@ const AboutPage = () => {
     },
     {
       icon: Award,
-      color: "from-[#a855f7] to-[#6366f1]",
+      color: "from-[#f87171] to-[#e11d48]",
       value: totalCertificates,
       label: "Certificates",
       description: "Professional skills validated",
@@ -174,7 +174,7 @@ const AboutPage = () => {
     },
     {
       icon: Globe,
-      color: "from-[#6366f1] to-[#a855f7]",
+      color: "from-[#e11d48] to-[#f87171]",
       value: YearExperience,
       label: "Years of Experience",
       description: "Continuous learning journey",
@@ -197,7 +197,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e11d48] to-[#f87171]">
                 Hello, I'm
               </span>
               <span 
@@ -205,7 +205,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                Ralph Axle Ringor
               </span>
             </h2>
             
@@ -214,21 +214,21 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             Seorang lulusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki ketertarikan besar dalam pengembangan Front-End. Saya berfokus pada menciptakan pengalaman digital yang menarik dan selalu berusaha memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
+             A Dedicated and Passionate Student pursuing a Bachelor of Science in Information Technology (BSIT). Throughout my academic journey, I've been actively engaged in various projects and endeavors that reflect my commitment to the IT field.
             </p>
 
                {/* Quote Section */}
       <div 
-        className="relative bg-gradient-to-br from-[#6366f1]/5 via-transparent to-[#a855f7]/5 border border-gradient-to-r border-[#6366f1]/30 rounded-2xl p-4 my-6 backdrop-blur-md shadow-2xl overflow-hidden"
+        className="relative bg-gradient-to-br from-[#e11d48]/5 via-transparent to-[#f87171]/5 border border-gradient-to-r border-[#e11d48]/30 rounded-2xl p-4 my-6 backdrop-blur-md shadow-2xl overflow-hidden"
         data-aos="fade-up"
         data-aos-duration="1700"
       >
         {/* Floating orbs background */}
-        <div className="absolute top-2 right-4 w-16 h-16 bg-gradient-to-r from-[#6366f1]/20 to-[#a855f7]/20 rounded-full blur-xl"></div>
-        <div className="absolute -bottom-4 -left-2 w-12 h-12 bg-gradient-to-r from-[#a855f7]/20 to-[#6366f1]/20 rounded-full blur-lg"></div>
+        <div className="absolute top-2 right-4 w-16 h-16 bg-gradient-to-r from-[#e11d48]/20 to-[#f87171]/20 rounded-full blur-xl"></div>
+        <div className="absolute -bottom-4 -left-2 w-12 h-12 bg-gradient-to-r from-[#f87171]/20 to-[#e11d48]/20 rounded-full blur-lg"></div>
         
         {/* Quote icon */}
-        <div className="absolute top-3 left-4 text-[#6366f1] opacity-30">
+        <div className="absolute top-3 left-4 text-[#e11d48] opacity-30">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
           </svg>
@@ -240,11 +240,11 @@ const AboutPage = () => {
       </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="https://drive.google.com/file/d/1aQlwyUJpMxm6_jjCw5XMsbrYgTF2olyh/view?usp=drivesdk" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="800"
-                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl "
+                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#e11d48]/20 to-[#f87171] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl "
               >
                 <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
               </button>
@@ -253,7 +253,7 @@ const AboutPage = () => {
               <button 
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 "
+                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#f87171]/50 text-[#f87171] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 "
               >
                 <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
               </button>

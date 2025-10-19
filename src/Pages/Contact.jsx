@@ -35,8 +35,8 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     Swal.fire({
-      title: 'Mengirim Pesan...',
-      html: 'Harap tunggu selagi kami mengirim pesan Anda',
+      title: 'Sending Message...',
+      html: 'Please wait while we send your message.',
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
@@ -44,15 +44,15 @@ const ContactPage = () => {
     });
 
     try {
-      // Ganti dengan email Anda di FormSubmit
-      const formSubmitUrl = 'https://formsubmit.co/ekizulfarrachman@gmail.com';
-      
-      // Siapkan data form untuk FormSubmit
+      // Replace with your email address on FormSubmit
+      const formSubmitUrl = 'https://formsubmit.co/ralphringor22@gmail.com';
+
+      // Prepare form data for FormSubmit
       const submitData = new FormData();
       submitData.append('name', formData.name);
       submitData.append('email', formData.email);
       submitData.append('message', formData.message);
-      submitData.append('_subject', 'Pesan Baru dari Website Portfolio');
+      submitData.append('_subject', 'New Message from Portfolio Website');
       submitData.append('_captcha', 'false'); // Nonaktifkan captcha
       submitData.append('_template', 'table'); // Format email sebagai tabel
 
@@ -64,10 +64,10 @@ const ContactPage = () => {
 
      
       Swal.fire({
-        title: 'Berhasil!',
-        text: 'Pesan Anda telah berhasil terkirim!',
+        title: 'Success!',
+        text: 'Your message has been sent successfully!',
         icon: 'success',
-        confirmButtonColor: '#6366f1',
+        confirmButtonColor: '[#e11d48]', 
         timer: 2000,
         timerProgressBar: true
       });
@@ -81,10 +81,10 @@ const ContactPage = () => {
     } catch (error) {
       if (error.request && error.request.status === 0) {
         Swal.fire({
-          title: 'Berhasil!',
-          text: 'Pesan Anda telah berhasil terkirim!',
+          title: 'Success!',
+          text: 'Your message has been sent successfully!',
           icon: 'success',
-          confirmButtonColor: '#6366f1',
+          confirmButtonColor: '#e11d48',
           timer: 2000,
           timerProgressBar: true
         });
@@ -96,10 +96,10 @@ const ContactPage = () => {
         });
       } else {
         Swal.fire({
-          title: 'Gagal!',
-          text: 'Terjadi kesalahan. Silakan coba lagi nanti.',
+          title: 'Failed!',
+          text: 'An error occurred. Please try again later.',
           icon: 'error',
-          confirmButtonColor: '#6366f1'
+          confirmButtonColor: '#e11d48'
         });
       }
     } finally {
@@ -113,19 +113,19 @@ const ContactPage = () => {
         <h2
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
-        >
+          className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[##e11d48] to-[#f87171]"
+        > 
           <span
             style={{
-              color: "#6366f1",
+              color: "#e11d48",
               backgroundImage:
-                "linear-gradient(45deg, #6366f1 10%, #a855f7 93%)",
+                "linear-gradient(45deg, #e11d48 10%, #f87171 93%)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
           >
-            Hubungi Saya
+            Contact Me
           </span>
         </h2>
         <p
@@ -133,7 +133,7 @@ const ContactPage = () => {
           data-aos-duration="1100"
           className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2"
         >
-          Punya pertanyaan? Kirimi saya pesan, dan saya akan segera membalasnya.
+          Got a question? Send me a message, and I’ll get back to you as soon as possible.
         </p>
       </div>
 
@@ -144,18 +144,18 @@ const ContactPage = () => {
         <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[45%_55%] 2xl:grid-cols-[35%_65%] gap-12" >
           <div
         
-            className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-5 py-10 sm:p-10 transform transition-all duration-500 hover:shadow-[#6366f1]/10"
+            className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-5 py-10 sm:p-10 transform transition-all duration-500 hover:shadow-[#e11d48]/10"
           >
             <div className="flex justify-between items-start mb-8">
               <div>
-                <h2 className="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                  Hubungi
+                <h2 className="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#e11d48] to-[#f87171]">
+                  Get in Touch
                 </h2>
                 <p className="text-gray-400">
-                  Ada yang ingin didiskusikan? Kirim saya pesan dan mari kita bicara.
+                  Got something to discuss? Send me a message and let’s talk.
                 </p>
               </div>
-              <Share2 className="w-10 h-10 text-[#6366f1] opacity-50" />
+              <Share2 className="w-10 h-10 text-[#e11d48] opacity-50" />
             </div>
 
             <form 
@@ -167,15 +167,15 @@ const ContactPage = () => {
                 data-aos-delay="100"
                 className="relative group"
               >
-                <User className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
+                <User className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#e11d48] transition-colors" />
                 <input
                   type="text"
                   name="name"
-                  placeholder="Nama Anda"
+                  placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
                   disabled={isSubmitting}
-                  className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50"
+                  className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#e11d48]/30 transition-all duration-300 hover:border-[#e11d48]/30 disabled:opacity-50"
                   required
                 />
               </div>
@@ -184,15 +184,15 @@ const ContactPage = () => {
                 data-aos-delay="200"
                 className="relative group"
               >
-                <Mail className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
+                <Mail className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#e11d48] transition-colors" />
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email Anda"
+                  placeholder="Your Email"
                   value={formData.email}
                   onChange={handleChange}
                   disabled={isSubmitting}
-                  className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50"
+                  className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#e11d48]/30 transition-all duration-300 hover:border-[#e11d48]/30 disabled:opacity-50"
                   required
                 />
               </div>
@@ -201,14 +201,14 @@ const ContactPage = () => {
                 data-aos-delay="300"
                 className="relative group"
               >
-                <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
+                <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#e11d48] transition-colors" />
                 <textarea
                   name="message"
-                  placeholder="Pesan Anda"
+                  placeholder="Your Message"
                   value={formData.message}
                   onChange={handleChange}
                   disabled={isSubmitting}
-                  className="w-full resize-none p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 h-[9.9rem] disabled:opacity-50"
+                  className="w-full resize-none p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#e11d48]/30 transition-all duration-300 hover:border-[#e11d48]/30 h-[9.9rem] disabled:opacity-50"
                   required
                 />
               </div>
@@ -217,10 +217,10 @@ const ContactPage = () => {
                 data-aos-delay="400"
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="w-full bg-gradient-to-r from-[#e11d48] to-[#f87171] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#e11d48]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 <Send className="w-5 h-5" />
-                {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
+                {isSubmitting ? 'Mengirim...' : 'Send Message'}
               </button>
             </form>
 
@@ -229,7 +229,7 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className="  bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-500 hover:shadow-[#6366f1]/10">
+          <div className="  bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-500 hover:shadow-[#e11d48]/10">
             <Komentar />
           </div>
         </div>

@@ -197,10 +197,10 @@ export default function FullWidthTabs() {
     <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portofolio">
       {/* Header section - unchanged */}
       <div className="text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
-        <h2 className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
+        <h2 className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#e11d48] to-[#f87171]">
           <span style={{
-            color: '#6366f1',
-            backgroundImage: 'linear-gradient(45deg, #6366f1 10%, #a855f7 93%)',
+            color: '#e11d48',
+            backgroundImage: 'linear-gradient(45deg, #e11d48 10%, #f87171 93%)', 
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent'
@@ -221,7 +221,7 @@ export default function FullWidthTabs() {
           elevation={0}
           sx={{
             bgcolor: "transparent",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
+            border: "1px solid rgba(225, 29, 72, 0.15)", // subtle crimson border
             borderRadius: "20px",
             position: "relative",
             overflow: "hidden",
@@ -232,14 +232,14 @@ export default function FullWidthTabs() {
               left: 0,
               right: 0,
               bottom: 0,
-              background: "linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(59, 130, 246, 0.03) 100%)",
+              background:
+                "linear-gradient(180deg, rgba(225, 29, 72, 0.04) 0%, rgba(248, 113, 113, 0.04) 100%)",
               backdropFilter: "blur(10px)",
               zIndex: 0,
             },
           }}
           className="md:px-4"
         >
-          {/* Tabs remain unchanged */}
           <Tabs
             value={value}
             onChange={handleChange}
@@ -251,7 +251,7 @@ export default function FullWidthTabs() {
               "& .MuiTab-root": {
                 fontSize: { xs: "0.9rem", md: "1rem" },
                 fontWeight: "600",
-                color: "#94a3b8",
+                color: "#cbd5e1", // text-secondary
                 textTransform: "none",
                 transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
                 padding: "20px 0",
@@ -259,19 +259,21 @@ export default function FullWidthTabs() {
                 margin: "8px",
                 borderRadius: "12px",
                 "&:hover": {
-                  color: "#ffffff",
-                  backgroundColor: "rgba(139, 92, 246, 0.1)",
+                  color: "#fdf2f8", // text-primary
+                  backgroundColor: "rgba(225, 29, 72, 0.08)", // soft crimson hover
                   transform: "translateY(-2px)",
                   "& .lucide": {
                     transform: "scale(1.1) rotate(5deg)",
+                    color: "#f87171", // ember accent on hover
                   },
                 },
                 "&.Mui-selected": {
                   color: "#fff",
-                  background: "linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2))",
-                  boxShadow: "0 4px 15px -3px rgba(139, 92, 246, 0.2)",
+                  background:
+                    "linear-gradient(135deg, rgba(225, 29, 72, 0.2), rgba(248, 113, 113, 0.2))",
+                  boxShadow: "0 4px 15px -3px rgba(225, 29, 72, 0.25)",
                   "& .lucide": {
-                    color: "#a78bfa",
+                    color: "#fca5a5", // lighter accent when active
                   },
                 },
               },
@@ -300,6 +302,7 @@ export default function FullWidthTabs() {
             />
           </Tabs>
         </AppBar>
+
 
         <SwipeableViews
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}

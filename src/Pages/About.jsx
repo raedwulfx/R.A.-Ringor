@@ -214,7 +214,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             A Dedicated and Passionate Student pursuing a Bachelor of Science in Information Technology (BSIT). Throughout my academic journey, I've been actively engaged in various projects and endeavors that reflect my commitment to the IT field.
+              I am a hardworking and curious student pursuing a Bachelor of Science in Information Technology (BSIT). Over the course of my studies, I take part in various projects that reflect my interest in technology and my goal to turn what I learn into real, practical solutions. I enjoy exploring new ideas, solving problems, and building skills that prepare me to make a positive impact in the IT field.
             </p>
 
                {/* Quote Section */}

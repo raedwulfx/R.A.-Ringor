@@ -93,7 +93,7 @@ const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
 
-  // Optimize AOS initialization
+  // optimize AOS initialization
   useEffect(() => {
     const initAOS = () => {
       AOS.init({

@@ -130,7 +130,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                       To
                     </span>{' '}
                     <span data-aos="fade-right" data-aos-delay="600" className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
-                      My
+                      Axle's
                     </span>
                   </div>
                  <div>

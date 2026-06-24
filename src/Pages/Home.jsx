@@ -78,11 +78,11 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Information Technology Student", "Front-end Developer"];
-const TECH_STACK = ["Html", "Tailwind/CSS", "React", "Javascript"];
+const TECH_STACK = ["Java", "Html/Tailwind/CSS", "Python", "Javascript"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/raedwulfx" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ralph-axle-ringor-a0961517b/" },
-  { icon: Instagram, link: "https://www.instagram.com/typ.xiee/" }
+  { icon: Linkedin, link: "https://www.linkedin.com/in/ralphaxleringor/" },
+  { icon: Instagram, link: "https://www.instagram.com/xieu1ght/" }
 ];
 
 const Home = () => {

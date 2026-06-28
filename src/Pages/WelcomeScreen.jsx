@@ -170,7 +170,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 <div className="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl">
                   <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-[#e11d48]" />
                   <span className="bg-gradient-to-r from-[#e11d48] to-[#f87171] bg-clip-text text-transparent">
-                    <TypewriterEffect text="Ralph Axle Ringor" />
+                    <TypewriterEffect text="R. A. Ringor" />
                   </span>
                 </div>
                 </a>

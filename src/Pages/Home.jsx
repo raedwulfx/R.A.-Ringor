@@ -141,22 +141,7 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [handleTyping]);
 
-  // Lottie configuration
-  const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-      progressiveLoad: true,
-    },
-    style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${
-      isHovering 
-        ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2" 
-        : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
-    }`
-  };
+  
 
   return (
     <div className="min-h-screen bg-[#030014] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] " id="Home">
@@ -223,7 +208,13 @@ const Home = () => {
                 <div className={`relative lg:left-12 z-10 w-full opacity-90 transform transition-transform duration-500 ${
                   isHovering ? "scale-105" : "scale-100"
                 }`}>
-                  <DotLottieReact {...lottieOptions} />
+
+                  <img 
+                    src="Animation1.gif" 
+                    alt="Developer Animation" 
+                    className="w-full h-full object-contain transition-all duration-500 scale-[95%] sm:scale-[90%] md:scale-[90%] lg:scale-[90%] rotate-2"
+                  />
+
                 </div>
 
                 <div className={`absolute inset-0 pointer-events-none transition-all duration-700 ${

@@ -210,7 +210,7 @@ const Home = () => {
                 }`}>
 
                   <img 
-                    src="Animation2.svg" 
+                    src="High Tech.svg" 
                     alt="Developer Animation" 
                     className="w-full h-full object-contain transition-all duration-500 scale-[95%] sm:scale-[90%] md:scale-[90%] lg:scale-[90%] rotate-2"
                   />

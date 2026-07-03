@@ -45,7 +45,7 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
                 </a>
                 . Adapted from a design by{" "}
                 <a
-                  href="https://github.com/EkiZR"
+                  href="https://github.com/raedwulfx"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -80,7 +80,7 @@ const ProjectPageLayout = () => (
                 </a>
                 . Adapted from a design by{" "}
                 <a
-                  href="https://github.com/EkiZR"
+                  href="https://github.com/raedwulfx"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -12,6 +12,7 @@ import WelcomeScreen from "./Pages/WelcomeScreen";
 import { AnimatePresence } from 'framer-motion';
 import notfound from "./Pages/404";
 import NotFoundPage from "./Pages/404";
+import ChatWidget from "./components/ChatWidget";
 
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
@@ -104,6 +105,7 @@ function App() {
         <Route path="/project/:id" element={<ProjectPageLayout />} />
          <Route path="*" element={<NotFoundPage />} /> {/* Ini route 404 */}
       </Routes>
+      <ChatWidget />
     </BrowserRouter>
   );
 }

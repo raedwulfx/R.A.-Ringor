@@ -248,11 +248,11 @@ export default function ChatWidget() {
     setIsOpen((current) => !current);
   };
 
-  const panelTop = clamp(
-    position.y + CHATHEAD_SIZE - panelHeight,
-    EDGE_MARGIN,
-    Math.max(EDGE_MARGIN, window.innerHeight - panelHeight - EDGE_MARGIN)
-  );
+  const GAP = 12;
+  const opensUpward = position.y > window.innerHeight / 2;
+  const panelTop = opensUpward
+    ? clamp(position.y - panelHeight - GAP, EDGE_MARGIN, Math.max(EDGE_MARGIN, window.innerHeight - panelHeight - EDGE_MARGIN))
+    : clamp(position.y + CHATHEAD_SIZE + GAP, EDGE_MARGIN, Math.max(EDGE_MARGIN, window.innerHeight - panelHeight - EDGE_MARGIN));
 
   return (
     <div className="fixed inset-0 z-[60] pointer-events-none">
